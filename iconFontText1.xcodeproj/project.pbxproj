@@ -50,6 +50,7 @@
 		18D21AAB1FA8559F00C11575 = {
 			isa = PBXGroup;
 			children = (
+				1893F5111FA9B2CA005C72FE /* LFIconFont */,
 				18D21AB61FA8559F00C11575 /* iconFontText1 */,
 				18D21AB51FA8559F00C11575 /* Products */,
 			);
@@ -66,7 +67,6 @@
 		18D21AB61FA8559F00C11575 /* iconFontText1 */ = {
 			isa = PBXGroup;
 			children = (
-				1893F5111FA9B2CA005C72FE /* LFIconFont */,
 				148D82201FA8B36D008AD3E1 /* iconfont.ttf */,
 				18D21AB71FA8559F00C11575 /* AppDelegate.swift */,
 				18D21AB91FA8559F00C11575 /* ViewController.swift */,
