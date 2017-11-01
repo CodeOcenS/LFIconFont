@@ -34,7 +34,7 @@ class LFIconFont: NSObject {
         self.labelText = label.text
     }
     ///初始化图标 ,图片可用
-    /// - important :图片大小由iconFont的fontSize自动计算决定。
+    /// - important :图片大小由iconFont的fontSize自动计算决定。建议UIImageView大小参考打印值,这样的图片显示效果是最好的。
     /// - parameter code: 标准解析格式，比如："\u{a62b}"
     /// - parameter name:图标的中文名
     /// - parameter fontSize:图标（字体大小）
@@ -45,9 +45,11 @@ class LFIconFont: NSObject {
         let nscode = code as NSString
         let rect = nscode.boundingRect(with:CGSize(width: 0.0, height: 0.0) , options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font :  UIFont(name: "IconFont", size: fontSize)!], context: nil)
         let size = rect.size
+        print("建议图片大小：\(size)") //建议UIImageView大小参考打印值
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         label.font = UIFont(name: "IconFont", size: fontSize)
         label.textAlignment = .center
+        label.textColor = color
         label.text = code
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         label.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -56,6 +58,7 @@ class LFIconFont: NSObject {
     }
     
     ///直接生成该图标的UIImage 对象
+    /// - important :图片大小由iconFont的fontSize自动计算决定。建议UIImageView大小参考打印值,这样的图片显示效果是最好的。
     /// - parameter fontSize:图标（字体大小）
     /// - parameter color:图标的颜色
     func iconFontImage(fontSize:CGFloat, color:UIColor) -> UIImage {
@@ -63,7 +66,7 @@ class LFIconFont: NSObject {
         let nscode = code as NSString
         let rect = nscode.boundingRect(with:CGSize(width: 0.0, height: 0.0) , options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: fontSize)], context: nil)
         let size = rect.size
-        
+        print("建议图片大小：\(size)") //建议UIImageView大小参考打印值
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         label.font = UIFont(name: "IconFont", size: fontSize) //??为什么用IconFont和字体文件名一致（首字母大小写无所谓）,但是不能换为其他的，哪怕你的iconFont的名字为其他的。

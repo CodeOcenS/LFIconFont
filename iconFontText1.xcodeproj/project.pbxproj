@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		148D82211FA8B38F008AD3E1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148D82201FA8B36D008AD3E1 /* iconfont.ttf */; };
+		1893F5131FA9B2F6005C72FE /* LFIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5121FA9B2F6005C72FE /* LFIconFont.swift */; };
 		18D21AB81FA8559F00C11575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21AB71FA8559F00C11575 /* AppDelegate.swift */; };
 		18D21ABA1FA8559F00C11575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21AB91FA8559F00C11575 /* ViewController.swift */; };
 		18D21ABD1FA8559F00C11575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D21ABB1FA8559F00C11575 /* Main.storyboard */; };
 		18D21ABF1FA8559F00C11575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D21ABE1FA8559F00C11575 /* Assets.xcassets */; };
 		18D21AC21FA8559F00C11575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D21AC01FA8559F00C11575 /* LaunchScreen.storyboard */; };
-		18D21ACD1FA8654E00C11575 /* LFIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21ACC1FA8654E00C11575 /* LFIconFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		148D82201FA8B36D008AD3E1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = ../../../Downloads/font_ovafg1pey67gmn29/iconfont.ttf; sourceTree = "<group>"; };
+		1893F5121FA9B2F6005C72FE /* LFIconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFIconFont.swift; sourceTree = "<group>"; };
 		18D21AB41FA8559F00C11575 /* iconFontText1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iconFontText1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D21AB71FA8559F00C11575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D21AB91FA8559F00C11575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		18D21ABE1FA8559F00C11575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D21AC11FA8559F00C11575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D21AC31FA8559F00C11575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18D21ACC1FA8654E00C11575 /* LFIconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFIconFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1893F5111FA9B2CA005C72FE /* LFIconFont */ = {
+			isa = PBXGroup;
+			children = (
+				1893F5121FA9B2F6005C72FE /* LFIconFont.swift */,
+			);
+			path = LFIconFont;
+			sourceTree = "<group>";
+		};
 		18D21AAB1FA8559F00C11575 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +66,7 @@
 		18D21AB61FA8559F00C11575 /* iconFontText1 */ = {
 			isa = PBXGroup;
 			children = (
+				1893F5111FA9B2CA005C72FE /* LFIconFont */,
 				148D82201FA8B36D008AD3E1 /* iconfont.ttf */,
 				18D21AB71FA8559F00C11575 /* AppDelegate.swift */,
 				18D21AB91FA8559F00C11575 /* ViewController.swift */,
@@ -65,7 +74,6 @@
 				18D21ABE1FA8559F00C11575 /* Assets.xcassets */,
 				18D21AC01FA8559F00C11575 /* LaunchScreen.storyboard */,
 				18D21AC31FA8559F00C11575 /* Info.plist */,
-				18D21ACC1FA8654E00C11575 /* LFIconFont.swift */,
 			);
 			path = iconFontText1;
 			sourceTree = "<group>";
@@ -143,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D21ACD1FA8654E00C11575 /* LFIconFont.swift in Sources */,
+				1893F5131FA9B2F6005C72FE /* LFIconFont.swift in Sources */,
 				18D21ABA1FA8559F00C11575 /* ViewController.swift in Sources */,
 				18D21AB81FA8559F00C11575 /* AppDelegate.swift in Sources */,
 			);
