@@ -50,8 +50,11 @@
 注意：使用合适fontSize参数， 不然图标效果差 （比如可以设置为UIImageView的高度）。
 
 也可以参考打印日志获取最佳的UIImage的Size 截图日志打印：
+
 ![打印日志](https://gitee.com/uploads/images/2017/1102/105135_fe7888ea_1438372.png "屏幕快照 2017-11-02 上午10.51.41.png")
+
 效果图：
+
 ![输入图片说明](https://gitee.com/uploads/images/2017/1102/103926_3bfbba3e_1438372.png "IMG_1424.PNG")
 
 说明：
