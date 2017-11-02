@@ -13,18 +13,17 @@ class ViewController: UIViewController {
     //定义图标(建议单独放在一个文件中，方便统一管理)
     let icon_delete = LFIconFont(code: "\u{e645}", name: "删除")
     let icon_pointer = LFIconFont(code: "\u{e504}", name: "大头针")
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addIconfont()
         useExtension()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
      //调用LFIconFont在Label  和 UIView中使用
     func addIconfont() -> Void {
         //在UILable中使用
@@ -39,6 +38,7 @@ class ViewController: UIViewController {
         imgView.image = deleteImage
         self.view.addSubview(imgView)
     }
+    
     //扩展UILabel   和   UIImage
     func useExtension() -> Void {
         //直接通过UILabel初始化
@@ -52,8 +52,5 @@ class ViewController: UIViewController {
         iconView.frame = CGRect(x: 50, y: 400, width: 50, height: 50)
         self.view.addSubview(iconView)
     }
-    
-    
-
 }
 
