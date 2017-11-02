@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addIconfont()
+        useExtension()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,34 +25,32 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+     //调用LFIconFont在Label  和 UIView中使用
     func addIconfont() -> Void {
-        let label = UILabel(frame: CGRect(x: 50, y: 60, width: 250, height: 50))
-        label.font = UIFont.systemFont(ofSize: 20)
-        label.text = "系统字体"
-        label.textColor = .gray
-        self.view.addSubview(label)
-        
+        //在UILable中使用
         let deletelabel = UILabel(frame: CGRect(x: 50, y: 100, width: 250, height: 50))
         deletelabel.font = UIFont.init(name: "iconFont", size: 20) //在UILabel中使用是必须设置font,否则无法正常显示
         deletelabel.text = "这是删除图标：" + icon_delete.labelText
         deletelabel.textColor = .gray
         self.view.addSubview(deletelabel)
+        //直接转化为Image图标使用
         let deleteImage = icon_delete.iconFontImage(fontSize: 30, color: .green)
         let imgView = UIImageView(frame: CGRect(x: 50, y: 200, width: deleteImage.size.width, height: deleteImage.size.height))
         imgView.image = deleteImage
         self.view.addSubview(imgView)
+    }
+    //扩展UILabel   和   UIImage
+    func useExtension() -> Void {
+        //直接通过UILabel初始化
+        let iconLabel = UILabel(iconfont: icon_pointer.code, frame: CGRect(x: 50, y: 300, width: 50, height: 50), fontSize:18)
+        iconLabel.textColor = .blue
+        self.view.addSubview(iconLabel)
         
-        let pointerlabel = UILabel(frame: CGRect(x: 50, y: 300, width: 300, height: 50))
-        pointerlabel.font = UIFont.init(name: "IconFont", size: 30)
-        pointerlabel.text = "这是大头针：" + icon_pointer.labelText
-        pointerlabel.textColor = .blue
-        self.view.addSubview(pointerlabel)
-        let pImage = icon_pointer.iconFontImage(fontSize: 40, color: .blue)
-        let pImageView = UIImageView(frame: CGRect(x: 50, y: 400, width: pImage.size.width, height: pImage.size.height))
-        pImageView.image = pImage
-        self.view.addSubview(pImageView)
-        
+        //直接初始化为UIImage
+        let iconImage = UIImage(iconfont: icon_pointer.code, fontSize: 50, color: .black) //fontSize一般和View高度差不多
+        let iconView = UIImageView(image: iconImage)
+        iconView.frame = CGRect(x: 50, y: 400, width: 50, height: 50)
+        self.view.addSubview(iconView)
     }
     
     

@@ -76,6 +76,34 @@ class LFIconFont: NSObject {
         label.layer.render(in: UIGraphicsGetCurrentContext()!)   //??深入了解layer
         let image = UIGraphicsGetImageFromCurrentImageContext()
         return image!
+        
     }
 
+}
+
+//MARK: - 扩展UILable
+extension UILabel{
+    ///直接通过UILabel加载iconfont
+    /// - parameter iconfont: 图标的编码标准格式如："\u{a626}"
+    convenience init(iconfont code:String, frame: CGRect ,fontSize:CGFloat) {
+        self.init(frame: frame)
+        self.text = code
+        self.font = UIFont(name: "IconFont", size: fontSize)
+        self.textAlignment = .center
+    }
+}
+
+
+//MARK: - 扩展UIImage
+extension UIImage {
+    ///直接通过生成UIImage
+    /// - parameter code: 图标的标准编码 如："\u{a626}"
+    /// - parameter fontSize: 图标的字体大小，建议设置为UIImageView的高度，这样最合适，效果最好。
+    /// - parameter color: 图标的颜色。
+    convenience init(iconfont code:String,fontSize:CGFloat, color:UIColor){
+        let iconImage = LFIconFont(code: code, name: "", fontSize: fontSize, color: color).iconImage
+        let iconData:Data = UIImagePNGRepresentation(iconImage!) ?? UIImageJPEGRepresentation(iconImage!, 1.0)!
+        self.init(data: iconData)!
+    }
+    
 }
