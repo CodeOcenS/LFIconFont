@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		148D82211FA8B38F008AD3E1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148D82201FA8B36D008AD3E1 /* iconfont.ttf */; };
 		1893F5131FA9B2F6005C72FE /* LFIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F5121FA9B2F6005C72FE /* LFIconFont.swift */; };
+		1893F5331FAAA788005C72FE /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1893F5321FAAA788005C72FE /* iconfont.ttf */; };
 		18D21AB81FA8559F00C11575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21AB71FA8559F00C11575 /* AppDelegate.swift */; };
 		18D21ABA1FA8559F00C11575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D21AB91FA8559F00C11575 /* ViewController.swift */; };
 		18D21ABD1FA8559F00C11575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D21ABB1FA8559F00C11575 /* Main.storyboard */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		148D82201FA8B36D008AD3E1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = ../../../Downloads/font_ovafg1pey67gmn29/iconfont.ttf; sourceTree = "<group>"; };
 		1893F5121FA9B2F6005C72FE /* LFIconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFIconFont.swift; sourceTree = "<group>"; };
+		1893F5321FAAA788005C72FE /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = SOURCE_ROOT; };
 		18D21AB41FA8559F00C11575 /* iconFontText1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iconFontText1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D21AB71FA8559F00C11575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D21AB91FA8559F00C11575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		18D21AB61FA8559F00C11575 /* iconFontText1 */ = {
 			isa = PBXGroup;
 			children = (
-				148D82201FA8B36D008AD3E1 /* iconfont.ttf */,
+				1893F5321FAAA788005C72FE /* iconfont.ttf */,
 				18D21AB71FA8559F00C11575 /* AppDelegate.swift */,
 				18D21AB91FA8559F00C11575 /* ViewController.swift */,
 				18D21ABB1FA8559F00C11575 /* Main.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148D82211FA8B38F008AD3E1 /* iconfont.ttf in Resources */,
+				1893F5331FAAA788005C72FE /* iconfont.ttf in Resources */,
 				18D21AC21FA8559F00C11575 /* LaunchScreen.storyboard in Resources */,
 				18D21ABF1FA8559F00C11575 /* Assets.xcassets in Resources */,
 				18D21ABD1FA8559F00C11575 /* Main.storyboard in Resources */,
