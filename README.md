@@ -64,4 +64,4 @@
 - 这里是列表文本黑色图标使用UIImage扩展初始化的。
 
 详情使用参考项目中的ViewController.
-或者参考博客：[输入链接说明](http://blog.csdn.net/qq_14920635/article/details/78408761)
+或者参考博客：[Swift中使用iconfont](http://blog.csdn.net/qq_14920635/article/details/78408761)
